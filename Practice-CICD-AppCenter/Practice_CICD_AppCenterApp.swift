@@ -9,6 +9,11 @@ import SwiftUI
 
 @main
 struct Practice_CICD_AppCenterApp: App {
+    
+    init(){
+        AppCenterManager.config()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

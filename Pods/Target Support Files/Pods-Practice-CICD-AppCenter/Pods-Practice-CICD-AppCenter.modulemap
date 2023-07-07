@@ -1,0 +1,6 @@
+framework module Pods_Practice_CICD_AppCenter {
+  umbrella header "Pods-Practice-CICD-AppCenter-umbrella.h"
+
+  export *
+  module * { export * }
+}
