@@ -55,6 +55,6 @@ class RetirementCalculatorViewModel:ObservableObject{
         let totalInvestmentTillRetirement:Double = currentSavingsScalar + monthlyInvestmentTillRetirement
         let retirementAmount:Double = totalInvestmentTillRetirement * interestScalar
         
-        message = "You are investing Rs. \(currentSavings) and Rs. \(monthlyInvestment) monthly till attainment of \(retirementAge) years. You will be having Rs. \(retirementAmount) as retirement amount"
+        message = "You are investing Rs. \(currentSavings) and Rs. \(monthlyInvestment) monthly till attainment of \(retirementAge) years. You will be having Rs. \(retirementAmount) as retirement amount."
     }
 }
