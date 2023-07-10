@@ -6,16 +6,46 @@
 //
 
 import SwiftUI
+import AppCenterCrashes
+import AppCenterAnalytics
 
 struct ContentView: View {
+    
+    @ObservedObject var viewModel = RetirementCalculatorViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack{
+            Form {
+                Section{
+                    TextField("Monthly investment", text: $viewModel.monthlyInvestment)
+                    TextField("Current age", text: $viewModel.currentAge)
+                    TextField("Retirement age", text: $viewModel.retirementAge)
+                    TextField("Interest", text: $viewModel.interest)
+                    TextField("Current savings", text: $viewModel.currentSavings)
+                }
+                Section{
+                    Button("Calculate") {
+                        //
+                        viewModel.trackCalculate()
+                        
+                        //
+                        viewModel.calculate()
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: 44.0)
+                    .background(Color.blue)
+                    .cornerRadius(8.0)
+                    .foregroundColor(.white)
+                }
+                Section{
+                    if viewModel.message.isEmpty == false{
+                        Text(viewModel.message)
+                    }
+                }
+            }
         }
-        .padding()
+        .onAppear{
+            Analytics.trackEvent("navigatedTo_calculate_retirement_amount")
+        }
     }
 }
 

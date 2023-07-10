@@ -16,4 +16,8 @@ class AppCenterManager{
         
         AppCenter.start(withAppSecret: "c55297d9-645f-4c5b-ac7b-fbfbd6b9f39d", services: [Crashes.self, Analytics.self])
     }
+    
+    static var didCrashInLastSession:Bool{
+        Crashes.hasCrashedInLastSession
+    }
 }
