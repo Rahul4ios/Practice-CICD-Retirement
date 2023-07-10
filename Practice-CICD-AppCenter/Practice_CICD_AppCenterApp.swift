@@ -10,6 +10,8 @@ import SwiftUI
 @main
 struct Practice_CICD_AppCenterApp: App {
     
+    @State private var didCrashLastSession = false
+    
     init(){
         AppCenterManager.config()
     }
@@ -17,6 +19,19 @@ struct Practice_CICD_AppCenterApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .alert("Sorry for the last crash", isPresented: $didCrashLastSession) {
+                    Text("Ok")
+                }
+                .onAppear{
+                    checkLastSessionCrashAndApologize()
+                }
         }
+    }
+}
+
+extension Practice_CICD_AppCenterApp{
+    
+    private func checkLastSessionCrashAndApologize(){
+        didCrashLastSession = AppCenterManager.didCrashInLastSession
     }
 }
