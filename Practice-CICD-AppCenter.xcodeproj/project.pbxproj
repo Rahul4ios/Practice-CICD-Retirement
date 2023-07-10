@@ -16,6 +16,7 @@
 		3D8F45982A56DEFA009D308E /* Practice_CICD_AppCenterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8F45972A56DEFA009D308E /* Practice_CICD_AppCenterUITests.swift */; };
 		3D8F459A2A56DEFA009D308E /* Practice_CICD_AppCenterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8F45992A56DEFA009D308E /* Practice_CICD_AppCenterUITestsLaunchTests.swift */; };
 		3D8F45A82A56E92D009D308E /* AppCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8F45A72A56E92D009D308E /* AppCenterManager.swift */; };
+		3DC27E6B2A5BC96000BB3C29 /* RetirementCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC27E6A2A5BC96000BB3C29 /* RetirementCalculatorViewModel.swift */; };
 		5A973D530DD4283CCCC40B20 /* Pods_Practice_CICD_AppCenter_Practice_CICD_AppCenterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C254EFF95A6FA0A02236605 /* Pods_Practice_CICD_AppCenter_Practice_CICD_AppCenterUITests.framework */; };
 		71027A7932AAD880F5CBED6B /* Pods_Practice_CICD_AppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6378CC1607F2BA4C383AD2 /* Pods_Practice_CICD_AppCenter.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +50,7 @@
 		3D8F45972A56DEFA009D308E /* Practice_CICD_AppCenterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice_CICD_AppCenterUITests.swift; sourceTree = "<group>"; };
 		3D8F45992A56DEFA009D308E /* Practice_CICD_AppCenterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice_CICD_AppCenterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3D8F45A72A56E92D009D308E /* AppCenterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCenterManager.swift; sourceTree = "<group>"; };
+		3DC27E6A2A5BC96000BB3C29 /* RetirementCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetirementCalculatorViewModel.swift; sourceTree = "<group>"; };
 		3E75C38D0E310D23DFC91100 /* Pods-Practice-CICD-AppCenter-Practice-CICD-AppCenterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice-CICD-AppCenter-Practice-CICD-AppCenterUITests.release.xcconfig"; path = "Target Support Files/Pods-Practice-CICD-AppCenter-Practice-CICD-AppCenterUITests/Pods-Practice-CICD-AppCenter-Practice-CICD-AppCenterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4C254EFF95A6FA0A02236605 /* Pods_Practice_CICD_AppCenter_Practice_CICD_AppCenterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Practice_CICD_AppCenter_Practice_CICD_AppCenterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9707A06F981B5C40027793 /* Pods-Practice-CICD-AppCenter-Practice-CICD-AppCenterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice-CICD-AppCenter-Practice-CICD-AppCenterUITests.debug.xcconfig"; path = "Target Support Files/Pods-Practice-CICD-AppCenter-Practice-CICD-AppCenterUITests/Pods-Practice-CICD-AppCenter-Practice-CICD-AppCenterUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				3D8F457C2A56DEF9009D308E /* Practice_CICD_AppCenterApp.swift */,
 				3D8F45A62A56E91C009D308E /* AppCenter */,
 				3D8F457E2A56DEF9009D308E /* ContentView.swift */,
+				3DC27E6A2A5BC96000BB3C29 /* RetirementCalculatorViewModel.swift */,
 				3D8F45802A56DEF9009D308E /* Assets.xcassets */,
 				3D8F45822A56DEF9009D308E /* Preview Content */,
 			);
@@ -383,6 +386,7 @@
 				3D8F457F2A56DEF9009D308E /* ContentView.swift in Sources */,
 				3D8F45A82A56E92D009D308E /* AppCenterManager.swift in Sources */,
 				3D8F457D2A56DEF9009D308E /* Practice_CICD_AppCenterApp.swift in Sources */,
+				3DC27E6B2A5BC96000BB3C29 /* RetirementCalculatorViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
