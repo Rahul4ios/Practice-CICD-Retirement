@@ -39,6 +39,7 @@ struct ContentView: View {
                 Section{
                     if viewModel.message.isEmpty == false{
                         Text(viewModel.message)
+                            .accessibilityIdentifier("message")
                     }
                 }
             }
